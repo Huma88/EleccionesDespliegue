@@ -19,8 +19,8 @@ public class DBConnection {
     private DBConnection() 
             throws ClassNotFoundException, SQLException {
         Class.forName("com.mysql.jdbc.Driver");
-        String connectionUrl = "jdbc:mysql://mysql13727-electionsada.jelastic.cloudhosted.es/db_elections";
-        conection = DriverManager.getConnection(connectionUrl, "root", "rbeoez5RJK");
+        String connectionUrl = "jdbc:mysql://localhost:3306/db_elections";
+        conection = DriverManager.getConnection(connectionUrl, "root", "root");
     }
 
     public synchronized static DBConnection GetConexion()
