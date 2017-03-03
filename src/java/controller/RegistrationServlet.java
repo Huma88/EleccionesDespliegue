@@ -70,7 +70,7 @@ public class RegistrationServlet extends HttpServlet {
             out.println("<button type=\"button\" name=\"button\" onclick=\"document.location.href ='index.jsp'\">Return</button>");
             out.println("</body>");
             out.println("</html>");
-        } catch (SQLException sqle) {
+        } catch (Exception sqle) {
             session.setAttribute("message", sqle);
             response.sendRedirect("messages.jsp");
         }

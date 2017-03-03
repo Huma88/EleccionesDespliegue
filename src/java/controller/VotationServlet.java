@@ -69,7 +69,7 @@ public class VotationServlet extends HttpServlet {
             out.println("hola" + a.getName());
             out.println("</body>");
             out.println("</html>");
-        } catch (SQLException sqle) {
+        } catch (Exception sqle) {
             out.println(sqle);
             session.setAttribute("message", sqle);
             response.sendRedirect("messages.jsp");
