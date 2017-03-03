@@ -17,7 +17,7 @@
         <%
             Exception ex = (Exception) session.getAttribute("message");
         %>
-        <table>
+        <table id="mensajes">
             <tr>
                 <td>
                     Message:
