@@ -12,12 +12,12 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
 
--- Volcando estructura de base de datos para db_elections_ada
-DROP DATABASE IF EXISTS `db_elections_ada`;
-CREATE DATABASE IF NOT EXISTS `db_elections_ada` /*!40100 DEFAULT CHARACTER SET utf8 */;
-USE `db_elections_ada`;
+-- Volcando estructura de base de datos para db_elections
+DROP DATABASE IF EXISTS `db_elections`;
+CREATE DATABASE IF NOT EXISTS `db_elections` /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE `db_elections`;
 
--- Volcando estructura para tabla db_elections_ada.politicalparty
+-- Volcando estructura para tabla db_elections.politicalparty
 DROP TABLE IF EXISTS `politicalparty`;
 CREATE TABLE IF NOT EXISTS `politicalparty` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -27,7 +27,7 @@ CREATE TABLE IF NOT EXISTS `politicalparty` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
--- Volcando datos para la tabla db_elections_ada.politicalparty: ~3 rows (aproximadamente)
+-- Volcando datos para la tabla db_elections.politicalparty: ~3 rows (aproximadamente)
 DELETE FROM `politicalparty`;
 /*!40000 ALTER TABLE `politicalparty` DISABLE KEYS */;
 INSERT INTO `politicalparty` (`id`, `name`, `logo`, `votes`) VALUES
@@ -37,7 +37,7 @@ INSERT INTO `politicalparty` (`id`, `name`, `logo`, `votes`) VALUES
 	(4, 'others', 'others', 0);
 /*!40000 ALTER TABLE `politicalparty` ENABLE KEYS */;
 
--- Volcando estructura para tabla db_elections_ada.user
+-- Volcando estructura para tabla db_elections.user
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE IF NOT EXISTS `user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -48,7 +48,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   UNIQUE KEY `IDENTIFIER` (`nif`)
 ) ENGINE=InnoDB AUTO_INCREMENT=62 DEFAULT CHARSET=utf8;
 
--- Volcando datos para la tabla db_elections_ada.user: ~0 rows (aproximadamente)
+-- Volcando datos para la tabla db_elections.user: ~0 rows (aproximadamente)
 DELETE FROM `user`;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
